@@ -3,265 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Currículo</title>
+    <title>Currículo - Filipe Rocha</title>
+    <!-- Tailwind CSS (Estilos) -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome (Ícones) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f3f4f6; /* bg-gray-100 */
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: #f3f4f6; 
         }
     </style>
 </head>
 <body class="text-gray-800 antialiased">
-
-    <div class="max-w-5xl mx-auto p-4 sm:p-8 mt-8 mb-8 bg-white shadow-xl rounded-2xl overflow-hidden">
+    <div class="max-w-5xl mx-auto p-4 sm:p-8 mt-4 md:mt-8 mb-8 bg-white shadow-xl rounded-2xl overflow-hidden">
         
-        <header class="flex flex-col md:flex-row items-center md:items-start justify-between border-b pb-8 mb-8">
-            <div class="flex flex-col md:flex-row items-center md:items-start md:pr-4 w-full md:w-auto">
+        <!-- CABEÇALHO E FOTO -->
+        <header class="flex flex-col md:flex-row items-center md:items-start justify-between border-b border-gray-200 pb-8 mb-8">
+            <div class="flex flex-col md:flex-row items-center md:items-start w-full md:w-auto">
                 
                 <!-- Foto de Perfil -->
                 <div class="mb-6 md:mb-0 md:mr-8 flex-shrink-0">
                     <img src="foto.jpg" alt="Foto de Filipe Rocha" onerror="this.src='https://ui-avatars.com/api/?name=Filipe+Rocha&size=160&background=2563eb&color=fff'" class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-gray-100 shadow-lg">
                 </div>
 
-                <div class="text-center md:text-left">
+                <!-- Info Principal -->
+                <div class="text-center md:text-left flex-1">
                     <h1 class="text-4xl font-bold text-gray-900 mb-2">FILIPE ROCHA</h1>
                     <p class="text-xl text-blue-600 font-medium mb-4">Desenvolvedor de Inteligência Artificial</p>
-                    <div class="text-gray-600 max-w-2xl text-sm md:text-base space-y-3">
-                        <p>
-                            Atualmente exerce a função de economiário em um grande banco brasileiro de alcance nacional. Atuou com tecnologia e inovação em uma empresa nacional que atende engenheiros, agrônomos e profissionais da área de geociências. Experiência com desenvolvimento de agentes de inteligência artificial, automação de processos e implementação de IA em diversos setores corporativos (RH, comercial, financeiro e administrativo).
-                        </p>
-                        <p>
-                            Possui background como desenvolvedor web (frontend e backend com HTML, CSS, JavaScript e Python), com atuação anterior em marketing digital — incluindo edição de imagem e vídeo, criação de campanhas para mídias sociais, roteiros de postagens, além do uso de IA para análise de dados, captação de leads, pós-venda e CRM.
-                        </p>
+                    <div class="text-gray-600 text-sm md:text-base space-y-3 max-w-2xl text-justify md:text-left">
+                        <p>Atualmente exerce a função de economiário em um grande banco brasileiro de alcance nacional. Profissional atuou com tecnologia e inovação em uma empresa nacional que atende engenheiros, agrônomos e profissionais da área de geociências. Experiência com desenvolvimento de agentes de inteligência artificial, automação de processos e implementação de IA em diversos setores da empresa, como RH, comercial, financeiro e administrativo.</p>
+                        <p>Possui também background como desenvolvedor web (frontend e backend com HTML, CSS, JavaScript e Python), com atuação anterior em marketing digital — incluindo edição de imagem e vídeo, criação de campanhas para mídias sociais, roteiros de postagens, além do uso de IA para análise de dados, captação de leads, pós-venda e CRM.</p>
                     </div>
                 </div>
             </div>
             
-            <div class="mt-6 md:mt-0 flex flex-col space-y-3 min-w-[250px] md:pl-4">
+            <!-- Contatos -->
+            <div class="mt-6 md:mt-0 flex flex-col space-y-3 min-w-[250px] md:pl-8 md:border-l border-gray-200">
                 <a href="mailto:filipedev_fb@outlook.com.br" class="flex items-center text-gray-600 hover:text-blue-600 transition-colors">
-                    <i class="fas fa-envelope w-5 mr-2 text-center"></i>
-                    <span class="text-sm">filipedev_fb@outlook.com.br</span>
+                    <i class="fas fa-envelope w-6 text-center text-blue-500"></i>
+                    <span>filipedev_fb@outlook.com.br</span>
                 </a>
-                <a href="tel:+5561999167700" class="flex items-center text-gray-600 hover:text-blue-600 transition-colors">
-                    <i class="fas fa-phone-alt w-5 mr-2 text-center"></i>
-                    <span class="text-sm">+55 61 99916-7700</span>
-                </a>
-                <span class="flex items-center text-gray-600">
-                    <i class="fas fa-map-marker-alt w-5 mr-2 text-center"></i>
-                    <span class="text-sm">Águas Claras, Brasília - DF</span>
-                </span>
+                <div class="flex items-center text-gray-600">
+                    <i class="fas fa-phone w-6 text-center text-blue-500"></i>
+                    <span>+55 61 99916-7700</span>
+                </div>
+                <div class="flex items-center text-gray-600">
+                    <i class="fas fa-map-marker-alt w-6 text-center text-blue-500"></i>
+                    <span>Águas Claras - DF</span>
+                </div>
             </div>
         </header>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            
+            <!-- COLUNA PRINCIPAL (ESQUERDA - 2/3) -->
             <div class="md:col-span-2 space-y-8">
                 
                 <!-- Experiência Profissional -->
                 <section>
-                    <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center border-b pb-2">
-                        <i class="fas fa-briefcase mr-3 text-blue-600"></i> Experiência Profissional
-                    </h2>
+                    <h2 class="text-2xl font-bold text-gray-900 border-b-2 border-blue-600 pb-2 mb-6 inline-block">Experiência Profissional</h2>
                     
-                    <div class="space-y-6">
-                        <!-- Caixa -->
-                        <div>
-                            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-1">
-                                <h3 class="text-lg font-bold text-gray-800">Técnico Bancário Novo</h3>
-                                <span class="text-xs font-medium text-blue-600 bg-blue-50 px-3 py-1 rounded-full mt-1 sm:mt-0">2026 - Presente</span>
-                            </div>
-                            <p class="text-gray-600 font-medium mb-1">Caixa Econômica Federal</p>
-                        </div>
+                    <!-- Caixa -->
+                    <div class="mb-6 relative pl-6 border-l-2 border-blue-200">
+                        <div class="absolute w-3 h-3 bg-blue-600 rounded-full -left-[7px] top-2"></div>
+                        <h3 class="text-lg font-bold text-gray-800">Técnico Bancário Novo</h3>
+                        <div class="text-blue-600 font-medium mb-1">Caixa Econômica Federal <span class="text-gray-500 text-sm ml-2 font-normal">(2026 - Atual)</span></div>
+                    </div>
 
-                        <!-- Mútua -->
-                        <div>
-                            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-1">
-                                <h3 class="text-lg font-bold text-gray-800">Estagiário em Tecnologia e Inovação</h3>
-                                <span class="text-xs font-medium text-gray-600 bg-gray-100 px-3 py-1 rounded-full mt-1 sm:mt-0">2025</span>
-                            </div>
-                            <p class="text-gray-600 font-medium mb-2">Mútua – Caixa de Assistência dos Profissionais do Crea</p>
-                            <ul class="list-disc list-inside text-gray-600 space-y-1 text-sm">
-                                <li>Criação de agentes de inteligência artificial para automação de processos.</li>
-                                <li>Implementação de soluções de IA nos setores de RH, financeiro, administrativo e comercial.</li>
-                            </ul>
-                        </div>
+                    <!-- StudioFB.IA -->
+                    <div class="mb-6 relative pl-6 border-l-2 border-blue-200">
+                        <div class="absolute w-3 h-3 bg-blue-600 rounded-full -left-[7px] top-2"></div>
+                        <h3 class="text-lg font-bold text-gray-800">Desenvolvedor Web Autônomo</h3>
+                        <div class="text-blue-600 font-medium mb-2">StudioFB.IA</div>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1 text-sm">
+                            <li>Empresa produtora de ensaios fotográficos digitais com o uso de IA de pessoas reais e objetos variados para venda em e-commerce.</li>
+                            <li>Criação de personagens animados e reais com o uso de IA para empresas variadas.</li>
+                        </ul>
+                    </div>
 
-                        <!-- StudioFB.IA -->
-                        <div>
-                            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-1">
-                                <h3 class="text-lg font-bold text-gray-800">Fundador & Desenvolvedor de IA</h3>
-                                <span class="text-xs font-medium text-gray-600 bg-gray-100 px-3 py-1 rounded-full mt-1 sm:mt-0">Recente</span>
-                            </div>
-                            <p class="text-gray-600 font-medium mb-2">StudioFB.IA</p>
-                            <ul class="list-disc list-inside text-gray-600 space-y-1 text-sm">
-                                <li>Empresa produtora de ensaios fotográficos digitais com o uso de IA de pessoas reais e objetos para e-commerce.</li>
-                                <li>Criação de personagens animados e reais com o uso de IA para empresas variadas.</li>
-                            </ul>
-                        </div>
+                    <!-- Mútua -->
+                    <div class="mb-6 relative pl-6 border-l-2 border-blue-200">
+                        <div class="absolute w-3 h-3 bg-blue-600 rounded-full -left-[7px] top-2"></div>
+                        <h3 class="text-lg font-bold text-gray-800">Estagiário em Tecnologia e Inovação</h3>
+                        <div class="text-blue-600 font-medium mb-2">Mútua – Caixa de Assistência <span class="text-gray-500 text-sm ml-2 font-normal">(2025)</span></div>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1 text-sm">
+                            <li>Criação de agentes de inteligência artificial para automação de processos.</li>
+                            <li>Implementação de soluções de IA nos setores de RH, financeiro, administrativo e comercial.</li>
+                        </ul>
+                    </div>
 
-                        <!-- Dev Web -->
-                        <div>
-                            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-1">
-                                <h3 class="text-lg font-bold text-gray-800">Desenvolvedor Web</h3>
-                                <span class="text-xs font-medium text-gray-600 bg-gray-100 px-3 py-1 rounded-full mt-1 sm:mt-0">Autônomo</span>
-                            </div>
-                            <p class="text-gray-600 text-sm">Desenvolvimento Full-stack e integração de soluções.</p>
-                        </div>
+                    <!-- Academia Sync -->
+                    <div class="mb-6 relative pl-6 border-l-2 border-gray-200">
+                        <div class="absolute w-3 h-3 bg-gray-400 rounded-full -left-[7px] top-2"></div>
+                        <h3 class="text-lg font-bold text-gray-800">Consultor de Vendas</h3>
+                        <div class="text-gray-600 font-medium mb-1">Academia Sync <span class="text-gray-500 text-sm ml-2 font-normal">(mar/2024 – out/2024)</span></div>
+                    </div>
 
-                        <!-- Academia Sync -->
-                        <div>
-                            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-1">
-                                <h3 class="text-lg font-bold text-gray-800">Consultor de Vendas</h3>
-                                <span class="text-xs font-medium text-gray-600 bg-gray-100 px-3 py-1 rounded-full mt-1 sm:mt-0">Mar 2024 - Out 2024</span>
-                            </div>
-                            <p class="text-gray-600 font-medium mb-1">Academia Sync</p>
-                        </div>
-
-                        <!-- Freelancer Social Media -->
-                        <div>
-                            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-1">
-                                <h3 class="text-lg font-bold text-gray-800">Social Media e Gestor de Tráfego</h3>
-                                <span class="text-xs font-medium text-gray-600 bg-gray-100 px-3 py-1 rounded-full mt-1 sm:mt-0">2023</span>
-                            </div>
-                            <p class="text-gray-600 font-medium mb-2">Freelancer</p>
-                            <ul class="list-disc list-inside text-gray-600 space-y-1 text-sm">
-                                <li>Planejamento e execução de campanhas publicitárias.</li>
-                                <li>Análise de desempenho, criação de conteúdos e roteiros.</li>
-                            </ul>
-                        </div>
-
-                        <!-- Consultorias -->
-                        <div>
-                            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-1">
-                                <h3 class="text-lg font-bold text-gray-800">Consultorias em Vendas</h3>
-                                <span class="text-xs font-medium text-gray-600 bg-gray-100 px-3 py-1 rounded-full mt-1 sm:mt-0">Anos Anteriores</span>
-                            </div>
-                            <p class="text-gray-600 text-sm">Atuação diversificada atendendo a múltiplas empresas no setor comercial.</p>
-                        </div>
+                    <!-- Freelancer -->
+                    <div class="mb-6 relative pl-6 border-l-2 border-gray-200">
+                        <div class="absolute w-3 h-3 bg-gray-400 rounded-full -left-[7px] top-2"></div>
+                        <h3 class="text-lg font-bold text-gray-800">Social Media e Gestor de Tráfego</h3>
+                        <div class="text-gray-600 font-medium mb-2">Freelancer <span class="text-gray-500 text-sm ml-2 font-normal">(2023)</span></div>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1 text-sm">
+                            <li>Planejamento e execução de campanhas publicitárias.</li>
+                            <li>Análise de desempenho, criação de conteúdos e roteiros.</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Consultorias -->
+                    <div class="relative pl-6 border-l-2 border-gray-200">
+                        <div class="absolute w-3 h-3 bg-gray-400 rounded-full -left-[7px] top-2"></div>
+                        <h3 class="text-lg font-bold text-gray-800">Consultorias em Vendas</h3>
+                        <div class="text-gray-600 text-sm">Diversas empresas (anos anteriores)</div>
                     </div>
                 </section>
 
-                <!-- Educação -->
+                <!-- Formação Acadêmica -->
                 <section>
-                    <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center border-b pb-2">
-                        <i class="fas fa-graduation-cap mr-3 text-blue-600"></i> Formação Acadêmica
-                    </h2>
-                    
+                    <h2 class="text-2xl font-bold text-gray-900 border-b-2 border-blue-600 pb-2 mb-6 inline-block">Formação Acadêmica</h2>
                     <div class="space-y-4">
-                        <div>
-                            <h3 class="text-md font-bold text-gray-800">MBA em Neurociência, Consumo e Marketing</h3>
-                            <p class="text-gray-600 text-sm">Faculdade Libanus</p>
+                        <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                            <h3 class="font-bold text-gray-800">Faculdade Libanus</h3>
+                            <p class="text-blue-600 font-medium text-sm">MBA em Neurociência, Consumo e Marketing</p>
+                            <p class="text-blue-600 font-medium text-sm">MBA em Inteligência Artificial</p>
                         </div>
-                        <div>
-                            <h3 class="text-md font-bold text-gray-800">MBA em Inteligência Artificial</h3>
-                            <p class="text-gray-600 text-sm">Faculdade Libanus</p>
+                        <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                            <h3 class="font-bold text-gray-800">UniCEUB</h3>
+                            <p class="text-gray-600 text-sm">Análise e Desenvolvimento de Sistemas – Cursando (Início 2024)</p>
                         </div>
-                        <div>
-                            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center">
-                                <h3 class="text-md font-bold text-gray-800">Análise e Desenvolvimento de Sistemas</h3>
-                                <span class="text-xs text-blue-600 font-medium">Cursando (Início 2024)</span>
-                            </div>
-                            <p class="text-gray-600 text-sm">UniCEUB</p>
-                        </div>
-                        <div>
-                            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center">
-                                <h3 class="text-md font-bold text-gray-800">Tecnólogo em Gestão Financeira</h3>
-                                <span class="text-xs text-gray-500">Concluído em 2021</span>
-                            </div>
-                            <p class="text-gray-600 text-sm">Faculdade Anhanguera</p>
+                        <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                            <h3 class="font-bold text-gray-800">Faculdade Anhanguera</h3>
+                            <p class="text-gray-600 text-sm">Tecnólogo em Gestão Financeira (Concluído em 2021)</p>
                         </div>
                     </div>
                 </section>
             </div>
 
+            <!-- COLUNA SECUNDÁRIA (DIREITA - 1/3) -->
             <div class="space-y-8">
                 
                 <!-- Habilidades -->
                 <section>
-                    <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center border-b pb-2">
-                        <i class="fas fa-code mr-3 text-blue-600"></i> Habilidades
-                    </h2>
-                    
+                    <h2 class="text-xl font-bold text-gray-900 border-b-2 border-blue-600 pb-2 mb-4">Habilidades Técnicas</h2>
                     <div class="flex flex-wrap gap-2">
-                        <span class="px-2 py-1 bg-blue-50 text-blue-700 rounded text-xs font-medium border border-blue-200">IA Aplicada</span>
-                        <span class="px-2 py-1 bg-blue-50 text-blue-700 rounded text-xs font-medium border border-blue-200">CrewAI (Multi-Agents)</span>
-                        <span class="px-2 py-1 bg-blue-50 text-blue-700 rounded text-xs font-medium border border-blue-200">Automação com IA</span>
-                        <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs font-medium border border-gray-200">Python</span>
-                        <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs font-medium border border-gray-200">JavaScript</span>
-                        <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs font-medium border border-gray-200">HTML / CSS</span>
-                        <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs font-medium border border-gray-200">Análise de Dados</span>
-                        <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs font-medium border border-gray-200">CRM</span>
-                        <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs font-medium border border-gray-200">UX/UI Design</span>
-                        <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs font-medium border border-gray-200">Gestão de Tráfego</span>
-                        <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs font-medium border border-gray-200">Edição de Vídeo/Imagem</span>
-                        <span class="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs font-medium border border-gray-200">GitHub</span>
+                        <!-- Skills em destaque -->
+                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full border border-blue-200">Inteligência Artificial</span>
+                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full border border-blue-200">CrewAI</span>
+                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full border border-blue-200">Automação com IA</span>
+                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full border border-blue-200">Python</span>
+                        
+                        <!-- Demais Skills -->
+                        <span class="bg-gray-100 text-gray-700 text-xs font-semibold px-3 py-1 rounded-full border border-gray-200">HTML / CSS / JS</span>
+                        <span class="bg-gray-100 text-gray-700 text-xs font-semibold px-3 py-1 rounded-full border border-gray-200">Social Media & Tráfego</span>
+                        <span class="bg-gray-100 text-gray-700 text-xs font-semibold px-3 py-1 rounded-full border border-gray-200">Edição Imagem/Vídeo</span>
+                        <span class="bg-gray-100 text-gray-700 text-xs font-semibold px-3 py-1 rounded-full border border-gray-200">UX/UI Design</span>
+                        <span class="bg-gray-100 text-gray-700 text-xs font-semibold px-3 py-1 rounded-full border border-gray-200">CRM / Dados</span>
+                        <span class="bg-gray-100 text-gray-700 text-xs font-semibold px-3 py-1 rounded-full border border-gray-200">GitHub</span>
+                        <span class="bg-gray-800 text-white text-xs font-semibold px-3 py-1 rounded-full">Inglês Avançado</span>
                     </div>
                 </section>
 
-                <!-- Idiomas -->
+                <!-- Palestras e Treinamentos -->
                 <section>
-                    <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center border-b pb-2">
-                        <i class="fas fa-language mr-3 text-blue-600"></i> Idiomas
-                    </h2>
-                    <div class="space-y-2">
-                        <div class="flex justify-between items-center">
-                            <span class="text-gray-700 text-sm font-medium">Inglês</span>
-                            <span class="text-xs text-blue-600 font-bold">Avançado</span>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <span class="text-gray-700 text-sm font-medium">Português</span>
-                            <span class="text-xs text-gray-500">Nativo</span>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Palestras e Ensino -->
-                <section>
-                    <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center border-b pb-2">
-                        <i class="fas fa-microphone mr-3 text-blue-600"></i> Palestras
-                    </h2>
-                    <p class="text-gray-700 text-sm mb-2 font-medium">Palestrante e Educador sobre IA e Monetização</p>
-                    <div class="bg-yellow-50 border border-yellow-200 p-3 rounded-lg text-sm text-gray-700">
-                        <i class="fas fa-star text-yellow-500 mr-1"></i>
-                        <strong>Treinamento de destaque:</strong> Ministrou capacitação para mulheres, patrocinada pelo Governo do Distrito Federal (Secretaria da Mulher).
+                    <h2 class="text-xl font-bold text-gray-900 border-b-2 border-blue-600 pb-2 mb-4">Palestras & Educação</h2>
+                    <div class="bg-blue-50 border border-blue-100 p-4 rounded-lg shadow-sm">
+                        <h3 class="font-bold text-blue-800 text-sm mb-1"><i class="fas fa-chalkboard-teacher mr-2"></i>Palestrante e Educador</h3>
+                        <p class="text-xs text-gray-700 mb-4">Inteligência artificial e suas aplicações para monetização.</p>
+                        
+                        <h3 class="font-bold text-blue-800 text-sm mb-1"><i class="fas fa-users mr-2"></i>Treinamento Especial</h3>
+                        <p class="text-xs text-gray-700">Para mulheres, patrocinado pelo Governo do Distrito Federal (Secretaria da Mulher).</p>
                     </div>
                 </section>
 
                 <!-- Certificações -->
                 <section>
-                    <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center border-b pb-2">
-                        <i class="fas fa-certificate mr-3 text-blue-600"></i> Certificações
-                    </h2>
-                    
-                    <ul class="space-y-2 text-xs text-gray-700">
-                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2 w-3"></i> <span>Introdução à IA & Eng. de Prompts (ASIMOV)</span></li>
-                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2 w-3"></i> <span>Multi-Agent Systems - CrewAI (ASIMOV)</span></li>
-                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2 w-3"></i> <span>Python (ASIMOV)</span></li>
-                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2 w-3"></i> <span>Automação de Processos através de RPA</span></li>
-                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2 w-3"></i> <span>SCRUM Fundamentals Certified</span></li>
-                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2 w-3"></i> <span>Fundamentos de Cibersegurança (Google)</span></li>
-                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2 w-3"></i> <span>Desenvolvimento Web Frontend</span></li>
-                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2 w-3"></i> <span>Gestão de Mídias Sociais (SME)</span></li>
-                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2 w-3"></i> <span>Analista de Mídia Paga (Gestor 6D)</span></li>
-                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2 w-3"></i> <span>Designer Gráfico (EIBSBNET)</span></li>
-                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2 w-3"></i> <span>Inovação no mercado financeiro</span></li>
-                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2 w-3"></i> <span>Certificação CPA-20 (ANBIMA)</span></li>
-                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2 w-3"></i> <span>Gestão Empresarial e Vendas (SEBRAE)</span></li>
+                    <h2 class="text-xl font-bold text-gray-900 border-b-2 border-blue-600 pb-2 mb-4">Certificações</h2>
+                    <ul class="text-sm text-gray-700 space-y-3">
+                        <li class="flex items-start"><i class="fas fa-certificate text-blue-500 mt-1 mr-2"></i><span>Intro à Inteligência Artificial – ASIMOV</span></li>
+                        <li class="flex items-start"><i class="fas fa-certificate text-blue-500 mt-1 mr-2"></i><span>Engenharia de Prompts – ASIMOV</span></li>
+                        <li class="flex items-start"><i class="fas fa-certificate text-blue-500 mt-1 mr-2"></i><span>Multi-Agent Systems (CrewAI) – ASIMOV</span></li>
+                        <li class="flex items-start"><i class="fas fa-certificate text-blue-500 mt-1 mr-2"></i><span>Python – ASIMOV</span></li>
+                        <li class="flex items-start"><i class="fas fa-certificate text-blue-500 mt-1 mr-2"></i><span>Automação via RPA (Transformação Digital)</span></li>
+                        <li class="flex items-start"><i class="fas fa-certificate text-blue-500 mt-1 mr-2"></i><span>Cibersegurança – Google</span></li>
+                        <li class="flex items-start"><i class="fas fa-certificate text-blue-500 mt-1 mr-2"></i><span>SCRUM Fundamentals Certified</span></li>
+                        <li class="flex items-start"><i class="fas fa-certificate text-blue-500 mt-1 mr-2"></i><span>Certificação CPA-20 – ANBIMA</span></li>
+                        <li class="flex items-start"><i class="fas fa-award text-gray-400 mt-1 mr-2"></i><span>Gestão de Mídias Sociais – SME</span></li>
+                        <li class="flex items-start"><i class="fas fa-award text-gray-400 mt-1 mr-2"></i><span>Analista de Mídia Paga – Gestor 6D</span></li>
+                        <li class="flex items-start"><i class="fas fa-award text-gray-400 mt-1 mr-2"></i><span>Designer Gráfico – EIBSBNET</span></li>
+                        <li class="flex items-start"><i class="fas fa-award text-gray-400 mt-1 mr-2"></i><span>Gestão Empresarial e Vendas – SEBRAE</span></li>
                     </ul>
                 </section>
-                
-                <section class="pt-4">
-                     <button onclick="window.print()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-4 rounded-lg transition-colors flex items-center justify-center shadow-md">
-                        <i class="fas fa-print mr-2"></i> Salvar PDF / Imprimir
-                    </button>
-                </section>
+
             </div>
         </div>
         
     </div>
-
 </body>
 </html>
